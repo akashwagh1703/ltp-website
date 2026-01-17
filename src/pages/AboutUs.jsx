@@ -11,7 +11,7 @@ function AboutUs() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
           >
-            <h1>About <span className="gradient-text">Let's Turf Play</span></h1>
+            <h1>About <span className="gradient-text">LTP - Let's Turf Play</span></h1>
             <p>Revolutionizing sports facility management in India</p>
           </motion.div>
         </div>
@@ -21,7 +21,7 @@ function AboutUs() {
         <div className="page-content">
           <section>
             <h2>Our Story</h2>
-            <p>Let's Turf Play was born from a simple observation: turf owners were struggling with outdated, manual booking systems while players faced difficulty finding and booking quality sports facilities.</p>
+            <p>LTP - Let's Turf Play was born from a simple observation: turf owners were struggling with outdated, manual booking systems while players faced difficulty finding and booking quality sports facilities.</p>
             <p>Founded in 2024, we set out to bridge this gap with technology. Our mission is to empower turf owners with smart tools while making sports more accessible to everyone.</p>
           </section>
 
@@ -92,24 +92,7 @@ function AboutUs() {
 
           <section>
             <h2>Our Impact</h2>
-            <div className="stats-grid">
-              <div className="stat-box">
-                <h3>500+</h3>
-                <p>Turf Owners</p>
-              </div>
-              <div className="stat-box">
-                <h3>10,000+</h3>
-                <p>Monthly Bookings</p>
-              </div>
-              <div className="stat-box">
-                <h3>50,000+</h3>
-                <p>Active Players</p>
-              </div>
-              <div className="stat-box">
-                <h3>25+</h3>
-                <p>Cities</p>
-              </div>
-            </div>
+            <p>We're helping turf owners across India transform their business operations and improve efficiency.</p>
           </section>
 
           <section>

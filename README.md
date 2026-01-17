@@ -1,17 +1,15 @@
-# LTP Website - Let's Turf Play
+# LTP Website - Let's Play Turf (Turf Owner App)
 
-A futuristic, informative website showcasing the LTP Turf Owner App and its revolutionary approach to turf management.
+A professional website showcasing the LTP Turf Owner App - helping turf owners transform from manual to digital management.
 
-## 🎨 Design Features
+## 🎯 Target Audience
 
-- **Modern Futuristic Design** with smooth animations
-- **3-Color Scheme:**
-  - Primary: #00D9FF (Cyan)
-  - Secondary: #6C5CE7 (Purple)
-  - Accent: #FF6B6B (Red)
-- **Framer Motion** animations for smooth transitions
-- **Boxicons** for beautiful icons
-- **Responsive** design for all devices
+**Turf Owners** who want to:
+- Replace manual registers with digital booking system
+- Login and access their registered turfs
+- Create offline bookings for walk-in customers
+- Calculate revenue automatically
+- Track business performance digitally
 
 ## 🚀 Quick Start
 
@@ -38,36 +36,40 @@ npm run build
 
 The build will be in the `dist` folder.
 
-## 📋 Sections
+## 📋 Key Features Highlighted
 
-1. **Hero** - Eye-catching introduction with stats
-2. **Problem** - Current challenges turf owners face
-3. **Solution** - How LTP Turf Owner App solves these problems
-4. **Features** - Key features of the app
-5. **How It Works** - 3-step process to get started
-6. **Benefits** - Impact and transformation metrics
-7. **CTA** - Call to action with download links
-8. **Footer** - Links and social media
+1. **Login System** - Secure access to turf owner dashboard
+2. **Registered Turfs** - View all your turfs in one place
+3. **Offline Booking Creation** - Create bookings for walk-in customers
+4. **Revenue Calculation** - Automatic daily/weekly/monthly calculations
+5. **Digital Register** - Replace physical register completely
+6. **Business Analytics** - Track performance and trends
 
-## 🎯 Key Highlights
+## 🎯 Key Messages
 
 ### Problem Section
-- Manual booking chaos (30% revenue loss)
-- Payment tracking nightmare (40% payment delays)
-- No real-time visibility (4+ hours wasted daily)
-- Poor customer experience (50% drop-off)
+- Manual walk-in booking process (5-10 minutes per booking)
+- Daily register management (1-2 hours daily)
+- Manual revenue calculation (1-2 hours daily)
+- No real-time business insights
 
 ### Solution Features
-- Automated booking system
-- Seamless payment management
-- Real-time dashboard
-- Mobile-first design
+- Login & access your registered turfs
+- Create offline bookings in 1-2 minutes
+- Auto revenue calculation in real-time
+- Digital register accessible from phone
 
 ### Benefits
-- 3x more bookings
-- Save 4+ hours daily
-- 100% payment tracking
-- Zero double bookings
+- Save 3-5 hours daily
+- Manage from your phone
+- Auto revenue calculation
+- Digital register system
+
+## 📱 Download
+
+- **APK Download**: Google Drive link (replace with actual link)
+- **Target**: Android turf owners
+- **Focus**: Offline booking creation and revenue tracking
 
 ## 🛠️ Tech Stack
 

@@ -30,16 +30,16 @@ function Navbar() {
       <div className="container">
         <div className="nav-content">
           <Link to="/" className="logo">
-            <i className='bx bxs-cricket-ball'></i>
-            <span>Let's Play Turf</span>
+            <img src="/icon.png" alt="LTP Logo" className="logo-icon" />
+            <span>LTP - Let's Turf Play</span>
           </Link>
           <div className="nav-links">
-            <Link to="/#problem">Problem</Link>
-            <Link to="/#solution">Solution</Link>
-            <Link to="/#features">Features</Link>
+            <a href="/#problem">Problem</a>
+            <a href="/#solution">Solution</a>
+            <a href="/#features">Features</a>
             <Link to="/faq">FAQ</Link>
             <Link to="/about">About</Link>
-            <Link to="/contact" className="btn-primary">Contact Us</Link>
+            <Link to="/#download" className="btn-primary">Download App</Link>
           </div>
         </div>
       </div>
@@ -54,24 +54,18 @@ function Footer() {
         <div className="footer-content">
           <div className="footer-brand">
             <div className="logo">
-              <i className='bx bxs-cricket-ball'></i>
-              <span>Let's Play Turf</span>
+              <img src="/icon.png" alt="LTP Logo" className="logo-icon" />
+              <span>LTP - Let's Turf Play</span>
             </div>
             <p>Revolutionizing turf management with smart technology</p>
-            <div className="social-links">
-              <a href="#"><i className='bx bxl-facebook'></i></a>
-              <a href="#"><i className='bx bxl-instagram'></i></a>
-              <a href="#"><i className='bx bxl-twitter'></i></a>
-              <a href="#"><i className='bx bxl-linkedin'></i></a>
-            </div>
           </div>
 
           <div className="footer-links">
             <div className="footer-column">
               <h4>Product</h4>
-              <Link to="/#features">Features</Link>
+              <a href="/#features">Features</a>
               <Link to="/faq">FAQ</Link>
-              <Link to="/#how-it-works">How It Works</Link>
+              <a href="/#how-it-works">How It Works</a>
             </div>
 
             <div className="footer-column">
@@ -90,7 +84,7 @@ function Footer() {
         </div>
 
         <div className="footer-bottom">
-          <p>&copy; 2024 Let's Turf Play. All rights reserved.</p>
+          <p>&copy; 2026 LTP - Let's Turf Play. All rights reserved.</p>
           <p>Made with <i className='bx bxs-heart'></i> in India</p>
         </div>
       </div>
