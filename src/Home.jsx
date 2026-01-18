@@ -18,7 +18,7 @@ function Home() {
       <section className="hero">
         <div className="hero-video-bg">
           <video autoPlay loop muted playsInline>
-            <source src="https://cdn.pixabay.com/video/2022/05/31/119043-716339820_large.mp4" type="video/mp4" />
+            <source src="/hero-section.mp4" type="video/mp4" />
           </video>
         </div>
         <div className="hero-bg"></div>
@@ -171,15 +171,15 @@ function Home() {
             <motion.div className="solution-visual" variants={fadeInUp}>
               <div className="solution-image">
                 <div className="floating-card card-1">
-                  <i className='bx bx-mobile-alt'></i>
+                  <i className='bx bx-book-bookmark'></i>
                   <span>Digital Register</span>
                 </div>
                 <div className="floating-card card-2">
-                  <i className='bx bx-check-circle'></i>
+                  <i className='bx bx-calendar-check'></i>
                   <span>Auto Booking</span>
                 </div>
                 <div className="floating-card card-3">
-                  <i className='bx bx-line-chart'></i>
+                  <i className='bx bx-bar-chart-alt-2'></i>
                   <span>Live Reports</span>
                 </div>
               </div>

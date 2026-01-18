@@ -8,6 +8,7 @@ import RefundPolicy from './pages/RefundPolicy'
 import AboutUs from './pages/AboutUs'
 import ContactUs from './pages/ContactUs'
 import FAQ from './pages/FAQ'
+import ApplyOwner from './pages/ApplyOwner'
 import './App.css'
 
 function Navbar() {
@@ -39,7 +40,7 @@ function Navbar() {
             <a href="/#features">Features</a>
             <Link to="/faq">FAQ</Link>
             <Link to="/about">About</Link>
-            <Link to="/#download" className="btn-primary">Download App</Link>
+            <Link to="/apply" className="btn-primary">Apply Now</Link>
           </div>
         </div>
       </div>
@@ -110,6 +111,7 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/apply" element={<ApplyOwner />} />
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           <Route path="/terms-of-service" element={<TermsOfService />} />
           <Route path="/refund-policy" element={<RefundPolicy />} />
