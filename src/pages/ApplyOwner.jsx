@@ -3,6 +3,56 @@ import { useState } from 'react'
 import { APP_CONFIG } from '../constants/config'
 import './Page.css'
 
+// Success Modal Component
+const SuccessModal = ({ isOpen, onClose, message }) => {
+  if (!isOpen) return null
+  
+  return (
+    <div className="modal-overlay" onClick={onClose}>
+      <motion.div 
+        className="modal-content success-modal"
+        initial={{ scale: 0.8, opacity: 0 }}
+        animate={{ scale: 1, opacity: 1 }}
+        onClick={(e) => e.stopPropagation()}
+      >
+        <div className="modal-icon">
+          <i className='bx bx-check-circle'></i>
+        </div>
+        <h3>Application Submitted!</h3>
+        <p>{message}</p>
+        <button className="btn-primary" onClick={onClose}>
+          Continue
+        </button>
+      </motion.div>
+    </div>
+  )
+}
+
+// Error Modal Component
+const ErrorModal = ({ isOpen, onClose, message }) => {
+  if (!isOpen) return null
+  
+  return (
+    <div className="modal-overlay" onClick={onClose}>
+      <motion.div 
+        className="modal-content error-modal"
+        initial={{ scale: 0.8, opacity: 0 }}
+        animate={{ scale: 1, opacity: 1 }}
+        onClick={(e) => e.stopPropagation()}
+      >
+        <div className="modal-icon">
+          <i className='bx bx-error-circle'></i>
+        </div>
+        <h3>Submission Failed</h3>
+        <p>{message}</p>
+        <button className="btn-primary" onClick={onClose}>
+          Try Again
+        </button>
+      </motion.div>
+    </div>
+  )
+}
+
 function ApplyOwner() {
   const [formData, setFormData] = useState({
     fullName: '',
@@ -11,6 +61,9 @@ function ApplyOwner() {
     address: ''
   })
   const [isSubmitting, setIsSubmitting] = useState(false)
+  const [showSuccessModal, setShowSuccessModal] = useState(false)
+  const [showErrorModal, setShowErrorModal] = useState(false)
+  const [modalMessage, setModalMessage] = useState('')
 
   const handleSubmit = async (e) => {
     e.preventDefault()
@@ -33,13 +86,16 @@ function ApplyOwner() {
       const data = await response.json()
       
       if (response.ok) {
-        alert(data.message)
+        setModalMessage(data.message || 'Your application has been submitted successfully! We will review it and contact you within 24 hours.')
+        setShowSuccessModal(true)
         setFormData({ fullName: '', email: '', phone: '', address: '' })
       } else {
-        alert(data.message || 'Something went wrong. Please try again.')
+        setModalMessage(data.message || 'Something went wrong. Please try again.')
+        setShowErrorModal(true)
       }
     } catch (error) {
-      alert('Network error. Please check your connection and try again.')
+      setModalMessage('Network error. Please check your connection and try again.')
+      setShowErrorModal(true)
     } finally {
       setIsSubmitting(false)
     }
@@ -183,6 +239,18 @@ function ApplyOwner() {
           </motion.div>
         </div>
       </div>
+      
+      <SuccessModal 
+        isOpen={showSuccessModal} 
+        onClose={() => setShowSuccessModal(false)}
+        message={modalMessage}
+      />
+      
+      <ErrorModal 
+        isOpen={showErrorModal} 
+        onClose={() => setShowErrorModal(false)}
+        message={modalMessage}
+      />
     </div>
   )
 }
